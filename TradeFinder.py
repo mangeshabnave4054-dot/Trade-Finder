@@ -204,7 +204,7 @@ if strategy_choice == "Strategy 1: EMA Crossover & RS Trend":
 
         if latest_nifty_close < latest_nifty_ema200:
             st.error(f"⚠️ Market Filter Active: NIFTY 50 ({latest_nifty_close:.1f}) is BELOW 200 EMA ({latest_nifty_ema200:.1f}). Long trades paused.")
-            # st.stop()
+            st.stop()
         else:
             st.success(f"✅ Market Regime Bullish: NIFTY 50 ({latest_nifty_close:.1f}) is ABOVE 200 EMA ({latest_nifty_ema200:.1f}). Scanning stocks...")
         
